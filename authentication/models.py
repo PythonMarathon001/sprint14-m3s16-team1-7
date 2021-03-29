@@ -4,6 +4,14 @@ from django.core.validators import validate_email
 from django.db import models, IntegrityError
 from django.db.utils import DataError
 
+from django.contrib.auth.models import AbstractUser, UserManager as AbstractUserManager
+
+class UserManager(AbstractUserManager):
+  pass
+
+class User(AbstractUser):
+    objects = UserManager()
+
 ROLE_CHOICES = (
     (0, 'visitor'),
     (1, 'admin'),

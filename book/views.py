@@ -1,6 +1,5 @@
 from django.shortcuts import render
 from django.http import HttpResponse
+from book.models import Book
 
 # Create your views here.
-def show_books(request):
-    return HttpResponse('<h1>Books Page</h1>')

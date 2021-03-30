@@ -8,9 +8,11 @@
     <div>
         <h1>{% block header %} All Users {% endblock %}</h1>
     </div>
+
     <div>
-        <p><a href="{% url 'create_user' %}"> Create new user</a></p>
+        {% block create_user %}<p><a href="{% url 'create_user' %}"> Create new user</a></p>{% endblock %}
     </div>
+
     <div>
         {% block content %}
         {% endblock %}

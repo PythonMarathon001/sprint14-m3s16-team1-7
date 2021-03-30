@@ -10,7 +10,7 @@
 </head>
 <body>
     <div class="wrapper">
-        <form class="form", action="{% url 'index' %}", method = "post">{% csrf_token %}
+        <form class="form" action="{% url 'index' %}" method = "post">{% csrf_token %}
           <div class="pageTitle title">Your Order </div>
           <div class="secondaryTitle title">Please fill this form to order a book.</div>
           <input type="text" name = "name", class="name formEntry" placeholder="First Name" />

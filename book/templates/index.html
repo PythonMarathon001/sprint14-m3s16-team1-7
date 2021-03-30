@@ -6,9 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
-<link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{% static 'style.css' %}">
-    <title>All Books</title>
+    <title>Random Books</title>
 </head>
 <body>
     <section class="main">
@@ -25,7 +25,9 @@
                             <p class="bookDescription">Genre: {{book.description}}</p>
                             <p class="bookCount">Count: {{book.count}}</p>
                             <p class="bookAuthors">Authors: {{book.authors}}</p>
-                            <button>Замовити</button>
+                            <button>
+                                <a href="http://localhost:8000/order/" target="_blank" rel="noopener noreferrer">Замовити</a>
+                            </button>
                         </div>
                     </li>
                 {% endfor %} 

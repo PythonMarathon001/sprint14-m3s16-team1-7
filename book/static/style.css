@@ -1,7 +1,18 @@
+/*CTRL + F5 - CLEAR HASH FOR UPDATES OF THIS FILE*/
 * {
   margin: 0;
   padding: 0;
-  /* -webkit-user-select: none; */
+}
+
+a{
+  text-decoration: none;
+  color:rgb(31, 187, 235);
+  transition: 1s ease;
+}
+
+a:hover {
+  color: rgb(35, 236, 0);
+  
 }
 
 li {
